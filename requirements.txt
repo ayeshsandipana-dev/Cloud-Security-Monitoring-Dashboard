@@ -1,0 +1,177 @@
+# ☁️ Cloud Security Monitoring Dashboard
+
+An interactive cybersecurity monitoring application built using Python, Streamlit, Plotly, and SQLite.
+
+This project demonstrates cloud security event monitoring, failed login detection, suspicious activity analysis, and security reporting.
+
+## 🛡️ Project Overview
+
+The Cloud Security Monitoring Dashboard is an educational security operations project designed to analyze simulated cloud security logs.
+
+It detects repeated failed login attempts and presents security insights through an interactive dashboard.
+
+## 🚀 Key Features
+
+- Cloud Security Log Analysis
+- Failed Login Detection
+- Repeated Login Failure Alerts
+- Security Event Visualization
+- Suspicious IP Monitoring
+- SQLite Database Integration
+- Interactive Streamlit Dashboard
+- CSV Security Report Export
+- Security Event Statistics
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Backend Development |
+| Streamlit | Interactive Dashboard |
+| Pandas | Log Processing |
+| Plotly | Data Visualization |
+| SQLite | Security Alert Storage |
+| GitHub | Version Control |
+
+## 📂 Project Structure
+
+```text
+Cloud-Security-Monitoring-Dashboard/
+├── app.py
+├── log_analyzer.py
+├── database.py
+├── generate_logs.py
+├── test_alerts.py
+├── data/
+│   └── cloud_logs.csv
+├── reports/
+├── screenshots/
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+## ⚙️ Installation
+
+### 1. Clone Repository
+
+```bash
+git clone https://www.credly.com/badges/f335269d-6b52-4374-bd2d-551532955f56/public_url
+```
+
+### 2. Open Project Directory
+
+```bash
+cd Cloud-Security-Monitoring-Dashboard
+```
+
+### 3. Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+### 4. Activate Environment (Windows PowerShell)
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+### 5. Install Dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## ▶️ How to Run
+
+Generate simulated cloud logs:
+
+```bash
+python generate_logs.py
+```
+
+Run the security analyzer:
+
+```bash
+python log_analyzer.py
+```
+
+Save security alerts to SQLite:
+
+```bash
+python database.py
+```
+
+Launch the dashboard:
+
+```bash
+python -m streamlit run app.py
+```
+
+Open the local Streamlit URL displayed in the terminal.
+
+## 📊 Dashboard Screenshots
+
+### Main Dashboard
+
+![Cloud Security Dashboard](screenshots/dashboard.png)
+
+### Security Alerts
+
+![Security Alerts](screenshots/security-alerts.png)
+
+### SQLite Database
+
+![Security Database](screenshots/database.png)
+
+### Security Reports
+
+![Security Reports](screenshots/reports.png)
+
+## 🔍 Detection Logic
+
+The system identifies repeated failed login attempts originating from the same source IP address.
+
+An alert is generated when at least five failed login events occur within a ten-minute window.
+
+This is a demonstration rule and does not independently prove malicious activity.
+
+## 🧪 Testing
+
+The project includes a test script that adds simulated failed login events to the dataset.
+
+```bash
+python test_alerts.py
+python log_analyzer.py
+```
+
+Note: Repeatedly running the test script may duplicate test events.
+
+## 🏆 Related Certification
+
+**Certification:** Cybersecurity and Cloud Fundamentals
+
+**Issued by:** Fortinet
+
+**Badge Verification:** [Verify My Badge](YOUR_BADGE_LINK)
+
+## ⚠️ Disclaimer
+
+This project is developed for educational and cybersecurity portfolio purposes.
+
+It uses simulated security events and is not a production cloud security monitoring solution.
+
+## 📌 Future Improvements
+
+- AWS CloudTrail Integration
+- Real-Time Log Ingestion
+- Alert Deduplication
+- Email Notifications
+- Role-Based Access Control
+- Automated Security Reporting
+- Advanced Threat Detection
+
+## ⭐ Project Status
+
+Completed educational prototype.
